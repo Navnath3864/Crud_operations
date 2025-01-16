@@ -31,7 +31,7 @@ public class StudentController {
 	
 	public void m1()
 	{
-		
+	   System.out.println("");	
 	}
 
 }
