@@ -17,5 +17,10 @@ public class StudentController {
 	public ResponseEntity<Student> addStudent(@RequestBody Student s) {
 		Student stud= ss.addStudent(s);
 		return new ResponseEntity<Student>(stud,HttpStatus.ACCEPTED);
+		
+	}
+	public void m1()
+	{
+		
 	}
 }
