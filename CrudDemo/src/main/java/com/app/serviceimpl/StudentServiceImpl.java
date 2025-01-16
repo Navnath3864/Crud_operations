@@ -1,5 +1,7 @@
 package com.app.serviceimpl;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +18,18 @@ public class StudentServiceImpl implements StudentService{
 	@Override
 	public Student addStudent(Student s) {
 		return repo.save(s);
+	}
+
+	@Override
+	public Student getSingleStudent(int rollno) {
+		Optional<Student> op=repo.findById(rollno);
+		if(op.isPresent())
+		{
+			Student st=op.get();
+			return st;
+					
+		}
+		return null;
 	}
 	
 	

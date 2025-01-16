@@ -4,6 +4,8 @@ import com.app.model.Student;
 
 public interface StudentService {
 
-	Student addStudent(Student s);
+	public Student addStudent(Student s);
+
+	public Student getSingleStudent(int rollno);
 
 }
