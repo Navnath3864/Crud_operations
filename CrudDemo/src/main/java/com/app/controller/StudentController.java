@@ -21,7 +21,7 @@ public class StudentController {
 		return new ResponseEntity<Student>(stud,HttpStatus.ACCEPTED);
 		
 	}
-<<<<<<< HEAD
+
 	
 	@GetMapping("/getsingle/{rollno}")
 	public ResponseEntity<Student> getSingleStudent(@PathVariable("rollno") int rollno) {
@@ -33,10 +33,6 @@ public class StudentController {
 	{
 		
 	}
-=======
-public void m1()
-{
->>>>>>> branch 'master' of https://github.com/Navnath3864/Crud_operations.git
-}
+
 }
 
