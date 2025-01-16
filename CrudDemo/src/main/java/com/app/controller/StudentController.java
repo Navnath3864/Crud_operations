@@ -19,8 +19,8 @@ public class StudentController {
 		return new ResponseEntity<Student>(stud,HttpStatus.ACCEPTED);
 		
 	}
-	public void m1()
-	{
-		
-	}
+public void m1()
+{
+}
+}
 }
