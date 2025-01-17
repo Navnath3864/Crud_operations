@@ -37,5 +37,9 @@ public class StudentController {
 		List<Student> studList=ss.getAllStudent();
 		return new ResponseEntity<List<Student>>(studList,HttpStatus.OK);
 	}
+	public void m2()
+	{
+		System.out.println("M2 method...");
+	}
 
 }
