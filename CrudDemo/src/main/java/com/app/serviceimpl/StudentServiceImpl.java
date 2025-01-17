@@ -1,5 +1,6 @@
 package com.app.serviceimpl;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +31,11 @@ public class StudentServiceImpl implements StudentService{
 					
 		}
 		return null;
+	}
+
+	@Override
+	public List<Student> getAllStudent() {
+		return repo.findAll();
 	}
 	
 	
