@@ -31,11 +31,16 @@ public class StudentController {
 		Student stud = ss.getSingleStudent(rollno);
 		return new ResponseEntity<Student>(stud, HttpStatus.OK);
 	}
+	
+	public void m1()
+	{
+	   System.out.println("");	
+
 
 	@GetMapping("/getall")
 	public ResponseEntity<List<Student>> getAllStudent() {
 		List<Student> studList=ss.getAllStudent();
 		return new ResponseEntity<List<Student>>(studList,HttpStatus.OK);
-	}
 
+	}
 }
