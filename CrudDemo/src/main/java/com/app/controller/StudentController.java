@@ -36,7 +36,7 @@ public class StudentController {
 	{
 	   System.out.println("");	
 
-
+	}
 	@GetMapping("/getall")
 	public ResponseEntity<List<Student>> getAllStudent() {
 		List<Student> studList=ss.getAllStudent();
